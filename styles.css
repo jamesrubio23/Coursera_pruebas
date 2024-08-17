@@ -22,6 +22,7 @@ h2 {
     font-size: 40px;
     text-decoration: underline solid var(--accent-color);
     text-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 
@@ -30,6 +31,11 @@ h2 {
 .logo {
     margin: 0 auto;
     padding: 2vh 4vw 5vw 4vw;
+    
+}
+
+.logo img{
+    max-height: 300 px;
 }
 
 
@@ -98,6 +104,7 @@ th,
 td {
     border: 2px solid var(--background1);
     color: var(--text-color);
+    text-align:center;
 }
 
 th {
@@ -330,69 +337,65 @@ footer .address {
 
 /* ---------------navbar------------------ */
 
+/* Navbar Styles */
 .navbar {
-    clear: both;
-    margin: 0vw 3vw;
-    padding: 0.75vw 0.75vw;
-    border-radius: 100px;
+    padding: 10px 20px;
+    background-color: var(--background2);
+    border-radius: 10px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
-    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
 .nav-item {
     background-color: var(--accent-color);
-    width: 100vw;
     text-align: center;
     color: var(--text-color);
     margin: 5px;
-    padding: 15px;
-    border-radius: 15px;
-    font-size: 150%;
-    border: 3px var(--background1) solid;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--background1);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .nav-item>a {
     color: var(--text-color);
-    display: block;
     text-decoration: none;
+    display: block;
 }
 
 .nav-item:hover {
     background-color: var(--hover-color);
-    border: 3px var(--hover-color) solid;
     color: var(--background1);
-    box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.nav-item>a:hover {
-    color: var(--background1);
+.logo img {
+    max-height: 60px; /* Ajusta la altura del logo si es necesario */
 }
 
-.nav-item:active {
-    background-color: var(--hover-color);
-    color: var(--background1);
-    border: 3px var(--background1) solid;
-}
-
-@media screen and (max-width:1110px) {
+@media screen and (max-width: 1110px) {
     .navbar {
-        justify-content: space-around;
         flex-wrap: wrap;
     }
     .nav-item {
-        width: 33vw;
+        width: 45%;
+        margin: 10px 0;
     }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
     .navbar {
-        justify-content: space-around;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .nav-item {
-        width: 100vw;
+        width: 100%;
+        margin: 10px 0;
     }
 }
+
+
