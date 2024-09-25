@@ -1,0 +1,8 @@
+1 rem equivale a 16 px
+Los ordenadores suelne ser 1366x768 px mientras que las pantallas 1920x1080.
+1 vw= 1% del ancho de la ventana
+
+
+
+Empezar por Routes (Hbiendo creado antes componentes) despues crear Navbar.
+
